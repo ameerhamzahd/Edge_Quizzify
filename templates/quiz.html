@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiziffy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>General Knowledge Quiz</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        {% for index, question in enumerate(questions) %}
+            <div class="question">
+                <p>{{ index + 1 }}. {{ question.question }}</p>
+                {% for option in question.options %}
+                    <label>
+                        <input type="radio" name="question-{{ index }}" value="{{ option }}">
+                        {{ option }}
+                    </label><br>
+                {% endfor %}
+            </div>
+        {% endfor %}
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
