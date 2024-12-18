@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Quizzify
+Version: 1.0.1
+Summary: General Knowledge Quiz App
+Home-page: https://github.com/ameerhamzahd/Edge_Quizzify.git
+Author: Ameer Hamzah Daiyan
+Author-email: ameerhamzah.daiyan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: flask

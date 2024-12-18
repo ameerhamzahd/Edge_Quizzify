@@ -1,0 +1,6 @@
+setup.py
+Quizzify.egg-info/PKG-INFO
+Quizzify.egg-info/SOURCES.txt
+Quizzify.egg-info/dependency_links.txt
+Quizzify.egg-info/requires.txt
+Quizzify.egg-info/top_level.txt
